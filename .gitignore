@@ -1,0 +1,20 @@
+# ignore Screenshots
+*.png
+*.jpg
+
+# ignore Backup zip
+*.zip
+
+# ignore Editor files
+*.sublime-project
+*.sublime-workspace
+*.komodoproject
+*.codekit3
+.idea
+
+# track these files, if they exist
+!.gitignore
+!.editorconfig
+!README.md
+!CHANGELOG.md
+!composer.json
