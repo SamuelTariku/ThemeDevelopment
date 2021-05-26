@@ -203,6 +203,10 @@
     <?php endif;?>
     
 	<div id="content" class="site-content">
-		<div class="container">
-			<div class="row">
-                <?php endif; ?>
+        <?php  
+            if( !is_page_template('elementor_header_footer')) { ?>
+            <div class="container">
+            <div class="row">
+        <?php } ?>
+			
+<?php endif; ?>

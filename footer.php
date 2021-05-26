@@ -46,8 +46,12 @@ endwhile;
 
 
 <?php if(!is_page_template( 'blank-page.php' ) && !is_page_template( 'blank-page-with-container.php' )): ?>
-			</div><!-- .row -->
-		</div><!-- .container -->
+		<?php  
+			if( !is_page_template('elementor_header_footer')){ ?>
+    			</div><!-- .row -->
+				</div><!-- .container -->
+    	<?php } ?>	
+		
 	</div><!-- #content -->
     <?php get_template_part( 'footer-widget' ); ?>
 	<footer id="colophon" class="site-footer <?php echo wp_bootstrap_starter_bg_class(); ?>" role="contentinfo">
